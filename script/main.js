@@ -305,6 +305,7 @@ function add_remove_position ()
 
             overall_pr = count_suma ();
             
+            chart_.destroy();
             chart_ = draw_chart_bar()
 
             sum_container.textContent = `Вся вартість ${overall_pr} грн`;
@@ -332,7 +333,7 @@ function add_remove_position ()
             overall_pr = count_suma ();
             sum_container.textContent = `Вся вартість ${overall_pr} грн`;
 
-            
+            chart_.destroy();
             chart_ = draw_chart_bar()
             
         });
